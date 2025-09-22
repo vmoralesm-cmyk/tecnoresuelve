@@ -1,0 +1,241 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario Docente 2025</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>📘 Calendario Escolar Docente 2025</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#primer-semestre">Primer Semestre</a></li>
+        <li><a href="#vacaciones">Vacaciones</a></li>
+        <li><a href="#segundo-semestre">Segundo Semestre</a></li>
+        <li><a href="#resumen">Resumen</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h2>📌 Inicio de Actividades Docentes</h2>
+      <ul>
+        <li>Semana institucional 1: <strong>13 - 17 enero 2025</strong></li>
+        <li>Semana institucional 2: <strong>20 - 24 enero 2025</strong></li>
+      </ul>
+    </section>
+
+    <section id="primer-semestre">
+      <h2>📚 Primer Semestre</h2>
+      <ul>
+        <li>Inicio del año escolar: <strong>27 enero 2025</strong></li>
+        <li>Periodo lectivo: <strong>27 enero - 20 junio 2025</strong></li>
+      </ul>
+    </section>
+
+    <section id="vacaciones">
+      <h2>🌴 Vacaciones y Pausas Docentes</h2>
+      <ul>
+        <li>Vacaciones mitad de año: <strong>21 junio - 6 julio 2025</strong></li>
+        <li>Semana de receso: <strong>6 - 10 octubre 2025</strong> (regreso 14 octubre)</li>
+      </ul>
+    </section>
+
+    <section id="segundo-semestre">
+      <h2>📘 Segundo Semestre</h2>
+      <ul>
+        <li>Inicio segundo semestre: <strong>14 julio 2025</strong></li>
+        <li>Periodo lectivo: <strong>14 julio - 5 diciembre 2025</strong></li>
+        <li>Vacaciones fin de año: <strong>6 diciembre 2025 - 13 enero 2026</strong></li>
+      </ul>
+    </section>
+
+    <section id="resumen">
+      <h2>📅 Resumen Anual</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Etapa</th>
+            <th>Fechas</th>
+            <th>Detalles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Actividades institucionales</td>
+            <td>13–24 enero</td>
+            <td>Planeación antes del inicio del año</td>
+          </tr>
+          <tr>
+            <td>Primer semestre</td>
+            <td>27 enero – 20 junio</td>
+            <td>Clases con estudiantes</td>
+          </tr>
+          <tr>
+            <td>Vacaciones mitad de año</td>
+            <td>21 junio – 6 julio</td>
+            <td>Libranza obligatoria docentes</td>
+          </tr>
+          <tr>
+            <td>Receso institucional</td>
+            <td>6 – 10 octubre</td>
+            <td>Enfoque institucional y pedagógico</td>
+          </tr>
+          <tr>
+            <td>Segundo semestre</td>
+            <td>14 julio – 5 diciembre</td>
+            <td>Continuación del año escolar</td>
+          </tr>
+          <tr>
+            <td>Vacaciones fin de año</td>
+            <td>6 diciembre – 13 enero</td>
+            <td>Descanso largo para docentes</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="festivos">
+      <h2>🎉 Festivos Nacionales 202
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario Docente 2025</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>📘 Calendario Escolar Docente 2025</h1>
+    <button id="toggleDarkMode">🌙 Modo Oscuro</button>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#primer-semestre">Primer Semestre</a></li>
+        <li><a href="#vacaciones">Vacaciones</a></li>
+        <li><a href="#segundo-semestre">Segundo Semestre</a></li>
+        <li><a href="#resumen">Resumen</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="filtro">
+      <h2>📅 Filtrar eventos por mes</h2>
+      <select id="mesSelector">
+        <option value="todos">Todos</option>
+        <option value="enero">Enero</option>
+        <option value="junio">Junio</option>
+        <option value="julio">Julio</option>
+        <option value="octubre">Octubre</option>
+        <option value="diciembre">Diciembre</option>
+      </select>
+    </section>
+
+    <section id="inicio" data-mes="enero">
+      <h2>📌 Inicio de Actividades Docentes</h2>
+      <ul>
+        <li>Semana institucional 1: <strong>13 - 17 enero 2025</strong></li>
+        <li>Semana institucional 2: <strong>20 - 24 enero 2025</strong></li>
+      </ul>
+    </section>
+
+    <section id="primer-semestre" data-mes="enero junio">
+      <h2>📚 Primer Semestre</h2>
+      <ul>
+        <li>Inicio del año escolar: <strong>27 enero 2025</strong></li>
+        <li>Periodo lectivo: <strong>27 enero - 20 junio 2025</strong></li>
+      </ul>
+    </section>
+
+    <section id="vacaciones" data-mes="junio julio octubre">
+      <h2>🌴 Vacaciones y Pausas Docentes</h2>
+      <ul>
+        <li>Vacaciones mitad de año: <strong>21 junio - 6 julio 2025</strong></li>
+        <li>Semana de receso: <strong>6 - 10 octubre 2025</strong></li>
+      </ul>
+    </section>
+
+    <section id="segundo-semestre" data-mes="julio diciembre">
+      <h2>📘 Segundo Semestre</h2>
+      <ul>
+        <li>Inicio segundo semestre: <strong>14 julio 2025</strong></li>
+        <li>Periodo lectivo: <strong>14 julio - 5 diciembre 2025</strong></li>
+        <li>Vacaciones fin de año: <strong>6 diciembre 2025 - 13 enero 2026</strong></li>
+      </ul>
+    </section>
+
+    <section id="resumen">
+      <h2>📅 Resumen Anual</h2>
+      <button id="descargarPDF">📥 Descargar PDF</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Etapa</th>
+            <th>Fechas</th>
+            <th>Detalles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Actividades institucionales</td>
+            <td>13–24 enero</td>
+            <td>Planeación antes del inicio del año</td>
+          </tr>
+          <tr>
+            <td>Primer semestre</td>
+            <td>27 enero – 20 junio</td>
+            <td>Clases con estudiantes</td>
+          </tr>
+          <tr>
+            <td>Vacaciones mitad de año</td>
+            <td>21 junio – 6 julio</td>
+            <td>Libranza obligatoria docentes</td>
+          </tr>
+          <tr>
+            <td>Receso institucional</td>
+            <td>6 – 10 octubre</td>
+            <td>Enfoque institucional y pedagógico</td>
+          </tr>
+          <tr>
+            <td>Segundo semestre</td>
+            <td>14 julio – 5 diciembre</td>
+            <td>Continuación del año escolar</td>
+          </tr>
+          <tr>
+            <td>Vacaciones fin de año</td>
+            <td>6 diciembre – 13 enero</td>
+            <td>Descanso largo para docentes</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="modalTrigger">
+      <h2>⭐ Evento Destacado</h2>
+      <button onclick="abrirModal()">Ver evento destacado</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Calendario Docente por ChatGPT</p>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <h3>Evento Especial: Inicio de clases</h3>
+      <p>📅 Lunes 27 de enero 2025 - ¡Inicio oficial del año escolar con estudiantes!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
