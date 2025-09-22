@@ -1,0 +1,55 @@
+// Ejemplo de mejora futura: mostrar alertas interactivas o popups de eventos próximos
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Calendario Docente cargado correctamente.");
+});
+// Modo oscuro
+const toggleBtn = document.getElementById("toggleDarkMode");
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
+// Modal
+function abrirModal() {
+  document.getElementById("modal").style.display = "block";
+}
+
+function cerrarModal() {
+  document.getElementById("modal").style.display = "none";
+}
+
+// Filtrado por mes
+const selector = document.getElementById("mesSelector");
+selector.addEventListener("change", () => {
+  const valor = selector.value;
+  const secciones = document.querySelectorAll("section[data-mes]");
+
+  secciones.forEach(sec => {
+    const meses = sec.getAttribute("data-mes");
+    sec.style.display = (valor === "todos" || meses.includes(valor)) ? "block" : "none";
+  });
+});
+
+// Notificación (simulada)
+window.addEventListener("load", () => {
+  const hoy = new Date();
+  const inicioClases = new Date("2025-01-27");
+
+  const diasRestantes = Math.ceil((inicioClases - hoy) / (1000 * 60 * 60 * 24));
+
+  if (diasRestantes > 0 && diasRestantes <= 30) {
+    alert(`📢 ¡Faltan ${diasRestantes} días para el inicio de clases el 27 de enero!`);
+  }
+});
+
+// PDF
+document.getElementById("descargarPDF").addEventListener("click", () => {
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF();
+  doc.text("Resumen Calendario Docente 2025", 10, 10);
+  doc.text("- Inicio clases: 27 enero 2025", 10, 20);
+  doc.text("- Primer periodo: 27 enero - 20 junio", 10, 30);
+  doc.text("- Vacaciones mitad de año: 21 junio - 6 julio", 10, 40);
+  doc.text("- Segundo periodo: 14 julio - 5 diciembre", 10, 50);
+  doc.text("- Vacaciones finales: 6 diciembre - 13 enero 2026", 10, 60);
+  doc.save("CalendarioDocente2025.pdf");
+});
