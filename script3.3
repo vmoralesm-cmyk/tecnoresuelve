@@ -1,0 +1,193 @@
+const subjectsData = [
+  {
+    nombre: "Matemáticas / Cálculo",
+    videos: [
+      { titulo: "Álgebra Básica", url: "https://www.youtube.com/embed/FHLsTqxW9uc" },
+      { titulo: "Derivadas", url: "https://www.youtube.com/embed/ZSYQ13iMbYA" }
+    ]
+  },
+  {
+    nombre: "Español y Literatura / Lectura Crítica",
+    videos: [
+      { titulo: "Comprensión de Lectura", url: "https://www.youtube.com/embed/a1T4yDsOnHk" },
+      { titulo: "Textos Argumentativos", url: "https://www.youtube.com/embed/mJzOLghzUwA" }
+    ]
+  },
+  {
+    nombre: "Inglés",
+    videos: [
+      { titulo: "Inglés Básico", url: "https://www.youtube.com/embed/XqdRzbkLa7g" }
+    ]
+  },
+  {
+    nombre: "Ciencias Naturales (Química y Física)",
+    videos: [
+      { titulo: "Ciencias Naturales", url: "https://www.youtube.com/embed/kAYfAaN_D1k" }
+    ]
+  },
+  {
+    nombre: "Ciencias Sociales y Ciudadanas",
+    videos: [
+      { titulo: "Historia de Colombia", url: "https://www.youtube.com/embed/Ry0FjIFsiQo" },
+      { titulo: "Geopolítica", url: "https://www.youtube.com/embed/Uw-kjhrh_NE" }
+    ]
+  },
+  {
+    nombre: "Filosofía",
+    videos: [
+      { titulo: "Introducción a la Filosofía", url: "https://www.youtube.com/embed/bYYg3f_HZAM" }
+    ]
+  },
+  {
+    nombre: "Educación Física",
+    videos: [
+      { titulo: "Rutinas en Casa", url: "https://www.youtube.com/embed/lMNYUsJOZvQ" }
+    ]
+  },
+  {
+    nombre: "Educación Ética y Religiosa",
+    videos: [
+      { titulo: "Valores Humanos", url: "https://www.youtube.com/embed/7iDrxshKsoE" }
+    ]
+  },
+  {
+    nombre: "Informática y Tecnología",
+    videos: [
+      { titulo: "Programación Básica", url: "https://www.youtube.com/embed/an8H3f73-_I" }
+    ]
+  },
+  {
+    nombre: "Educación Artística (música, diseño)",
+    videos: [
+      { titulo: "Arte Digital", url: "https://www.youtube.com/embed/iRqglu_DVus" }
+    ]
+  }
+];
+
+// Cargar materias
+const container = document.getElementById("subjects");
+
+subjectsData.forEach(subject => {
+  const card = document.createElement("div");
+  card.className = "subject-card";
+
+  let html = `<h3>${subject.nombre}</h3><ul>`;
+  subject.videos.forEach(video => {
+    html += `<li><a href="#" onclick="openModal('${video.url}', '${video.titulo}')">${video.titulo}</a></li>`;
+  });
+  html += "</ul>";
+  card.innerHTML = html;
+  container.appendChild(card);
+});
+
+// Buscador
+document.getElementById("searchInput").addEventListener("input", function () {
+  const filter = this.value.toLowerCase();
+  const cards = document.querySelectorAll(".subject-card");
+
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+    card.style.display = text.includes(filter) ? "block" : "none";
+  });
+});
+
+// Modo oscuro
+document.getElementById("toggleDarkMode").addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
+// Modal
+function openModal(url, title) {
+  document.getElementById("modalTitle").innerText = title;
+  document.getElementById("modalIframe").src = url;
+  document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+  document.getElementById("modalIframe").src = "";
+}
+ nombre: "Educación Física",
+    videos: [
+      { titulo: "Rutinas en Casa", url: "https://www.youtube.com/embed/lMNYUsJOZvQ" }
+    ]
+  },
+  {
+    nombre: "Educación Ética y Religiosa",
+    videos: [
+      { titulo: "Valores Humanos", url: "https://www.youtube.com/embed/7iDrxshKsoE" }
+    ]
+  },
+  {
+    nombre: "Informática y Tecnología",
+    videos: [
+      { titulo: "Programación Básica", url: "https://www.youtube.com/embed/an8H3f73-_I" }
+    ]
+  },
+  {
+    nombre: "Educación Artística (música, diseño)",
+    videos: [
+      { titulo: "Arte Digital", url: "https://www.youtube.com/embed/iRqglu_DVus" }
+    ]
+  }
+];
+
+// Cargar materias
+const container = document.getElementById("subjects");
+
+subjectsData.forEach(subject => {
+  const card = document.createElement("div");
+  card.className = "subject-card";
+
+  let html = `<h3>${subject.nombre}</h3><ul>`;
+  subject.videos.forEach(video => {
+    html += `<li><a href="#" onclick="openModal('${video.url}', '${video.titulo}')">${video.titulo}</a></li>`;
+  });
+  html += "</ul>";
+  card.innerHTML = html;
+  container.appendChild(card);
+});
+
+// Buscador
+document.getElementById("searchInput").addEventListener("input", function () {
+  const filter = this.value.toLowerCase();
+  const cards = document.querySelectorAll(".subject-card");
+
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+    card.style.display = text.includes(filter) ? "block" : "none";
+  });
+});
+
+// Modo oscuro
+document.getElementById("toggleDarkMode").addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
+// Modal
+function openModal(url, title) {
+  document.getElementById("modalTitle").innerText = title;
+  document.getElementById("modalIframe").src = url;
+  document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+  document.getElementById("modalIframe").src = "";
+}
+🧩 ¿Qué puedes añadir?
+✅ Reproductor tipo playlist
+
+✅ Videos recomendados aleatorios
+
+✅ Comentarios por materia (localStorage)
+
+✅ Contador de reproducciones
+
+¿Quieres que este
+
+
+3/3
+
+
+
